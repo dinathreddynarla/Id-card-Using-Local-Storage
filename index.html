@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>10000 Coders</h1>
+        <h1>Id Card Form</h1>
+
+        <label for="name">Enter Your Name</label>
+        <input type="text" id="name" required placeholder="e.g., Dinath Reddy">
+        <span class="error-message" id="nameError"></span>
+
+        <label for="phone">Enter Your Phone Number</label>
+        <input type="number" id="phone" required placeholder="e.g., 1234567890">
+        <span class="error-message" id="phoneError"></span>
+
+        <label for="batch">Enter Your Batch</label>
+        <input type="text" id="batch" required placeholder="e.g., 15R">
+        <span class="error-message" id="batchError"></span>
+
+        <label for="education">Enter Your Education</label>
+        <input type="text" id="education" required placeholder="e.g., B.Tech CSE">
+        <span class="error-message" id="educationError"></span>
+
+        <label for="imageInput">Upload Your Photo</label>
+        <input type="file" id="imageInput" accept="image/*" required>
+        <img id="imagePreview" src="" alt="Image Preview">
+
+        <button id="save" onclick="save()">Submit Details</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
